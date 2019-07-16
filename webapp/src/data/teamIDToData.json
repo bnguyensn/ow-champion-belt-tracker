@@ -1,0 +1,102 @@
+{
+  "4402": {
+    "name": "Boston Uprising",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/page_media/W4FGQ24HKCB51513383982827.svg",
+    "abbName": "BOS"
+  },
+  "4403": {
+    "name": "New York Excelsior",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/page_media/3PBR8VEYM8SH1517250447953.svg",
+    "abbName": "NYE"
+  },
+  "4404": {
+    "name": "San Francisco Shock",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/0SY7LHKHV86R1507822883113.svg",
+    "abbName": "SFS"
+  },
+  "4405": {
+    "name": "Los Angeles Valiant",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/L3U59GQVS1ZK1507822882879.svg",
+    "abbName": "VAL"
+  },
+  "4406": {
+    "name": "Los Angeles Gladiators",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/CHTRRZCBEYGN1507822882862.svg",
+    "abbName": "GLA"
+  },
+  "4407": {
+    "name": "Florida Mayhem",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/M1KNTZW8SGHZ1507822883041.svg",
+    "abbName": "FLA"
+  },
+  "4408": {
+    "name": "Shanghai Dragons",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/ZIVUVIWXNIFL1507822883114.svg",
+    "abbName": "SHD"
+  },
+  "4409": {
+    "name": "Seoul Dynasty",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/page_media/E9MU0AK0JIXT1507858876249.svg",
+    "abbName": "SEO"
+  },
+  "4410": {
+    "name": "London Spitfire",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/HCS229B4DP021507822883016.svg",
+    "abbName": "LDN"
+  },
+  "4523": {
+    "name": "Dallas Fuel",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/YX6JZ6FR89LU1507822882865.svg",
+    "abbName": "DAL"
+  },
+  "4524": {
+    "name": "Philadelphia Fusion",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/LAKZ6R7QEG6S1507822883033.svg",
+    "abbName": "PHI"
+  },
+  "4525": {
+    "name": "Houston Outlaws",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/gallery/BGP1O8PKAI091546557676638.svg",
+    "abbName": "HOU"
+  },
+  "7692": {
+    "name": "Chengdu Hunters",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/page_media/65/652SCYN8YQPB1542674099514.svg",
+    "abbName": "CDH"
+  },
+  "7693": {
+    "name": "Hangzhou Spark",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/gallery/ZQTMF62BVMHV1544640580461.svg",
+    "abbName": "HZS"
+  },
+  "7694": {
+    "name": "Paris Eternal",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/page_media/w4/W4C99JABL26E1542674142979.svg",
+    "abbName": "PAR"
+  },
+  "7695": {
+    "name": "Toronto Defiant",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/page_media/vc/VCXAU8C5WLJT1542674151813.svg",
+    "abbName": "TOR"
+  },
+  "7696": {
+    "name": "Vancouver Titans",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/gallery/0KOSPFU6UC411543976755522.svg",
+    "abbName": "VAN"
+  },
+  "7697": {
+    "name": "Washington Justice",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/page_media/VH7IGPLX4UJ61543968702521.svg",
+    "abbName": "WAS"
+  },
+  "7698": {
+    "name": "Atlanta Reign",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/page_media/60/609VVM89F1BY1542673347592.svg",
+    "abbName": "ATL"
+  },
+  "7699": {
+    "name": "Guangzhou Charge",
+    "svgIcon": "https://bnetcmsus-a.akamaihd.net/cms/page_media/d4/D4ITOG4F5WX01542674113751.svg",
+    "abbName": "GZC"
+  }
+}

@@ -1,0 +1,167 @@
+@import-normalize;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+  font: 14px 'Open Sans', sans-serif;
+  color: #000000;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ********** Main Title ********** */
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.title-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.title-text-champion-name {
+  display: flex;
+  align-items: center;
+
+}
+.title-text-champion-name-main {
+  flex-grow: 1;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.title-text-champion-name-side {
+  margin: 0 0.5rem;
+}
+
+.title-logo {
+  width: 15rem;
+  height: 15rem;
+}
+
+/* ********** Match History ********** */
+
+.match-history {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.match-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.match-details-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 20%;
+  margin: 0 0.5rem;
+}
+.match-details-score-winner {
+  font-weight: bold;
+}
+
+.team-display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 40%;
+}
+
+.team-display-name-abb {
+  display: inline-block;
+  text-align: center;
+}
+.team-display-name {
+  display: none;
+  text-align: center;
+}
+.team-display-name-winner {
+  font-weight: bold;
+}
+
+.team-display-logo {
+  margin: 0 0.5rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* ********** Spinner ********** */
+
+.spinner {
+  display: flex;
+  width: 64px;
+  height: 64px;
+}
+.spinner:after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 4px solid;
+  border-color: #ff8900 #ff8900 #ff8900 transparent;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ********** Media Queries ********** */
+
+@media screen and (min-width: 840px) {
+  html {
+    font-size: 16px;
+  }
+
+  .title-text-champion-name-side {
+    margin: 0 2rem;
+  }
+
+  .match-details-score {
+    margin: 0 1rem;
+  }
+
+  .team-display-name-abb {
+    display: none;
+  }
+  .team-display-name {
+    display: inline-block;
+  }
+
+  .team-display-logo {
+    margin: 0 1rem;
+    width: 5rem;
+    height: 5rem;
+  }
+}

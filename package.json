@@ -1,0 +1,24 @@
+{
+  "name": "ow-champion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@bnguyensn/bundler": "^2.4.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "scripts": {
+    "test": "npx @bnguyensn/bundler test",
+    "dev": "npx @bnguyensn/bundler dev",
+    "prod": "npx @bnguyensn/bundler prod",
+    "update-champion": "node server/bin"
+  },
+  "@bnguyensn/bundler": {
+    "entryPath": "webapp/src/index.js",
+    "htmlWebpackPluginTemplatePath": "webapp/src/assets/html/index.html"
+  }
+}
