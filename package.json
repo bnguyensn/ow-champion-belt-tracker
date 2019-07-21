@@ -15,7 +15,8 @@
     "test": "npx @bnguyensn/bundler test",
     "dev": "npx @bnguyensn/bundler dev",
     "prod": "npx @bnguyensn/bundler prod",
-    "update-champion": "node server/bin"
+    "server": "node server",
+    "gen-report": "node server/bin/generateReport.js"
   },
   "@bnguyensn/bundler": {
     "entryPath": "webapp/src/index.js",
