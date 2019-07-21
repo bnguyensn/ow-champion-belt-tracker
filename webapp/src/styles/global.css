@@ -80,12 +80,18 @@ body {
 .match {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .match-title {
   font-size: 0.8rem;
   text-decoration: underline;
+  text-align: center;
+}
+
+.match-bottom-text {
+  font-size: 0.8rem;
+  font-style: italic;
   text-align: center;
 }
 

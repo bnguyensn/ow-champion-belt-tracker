@@ -41,26 +41,34 @@ export default function App() {
       team1Score,
       team2Score,
       winnerID,
-      matchDate,
+      matchDate: matchDateInt,
     } = matchDetails[i];
 
     const loserID = team1ID === winnerID ? team2ID : team1ID;
     const winnerScore = team1ID === winnerID ? team1Score : team2Score;
     const loserScore = team1ID === winnerID ? team2Score : team1Score;
 
-    const matchDateStr = new Date(matchDate).toLocaleString('default', {
-      year: 'numeric',
-      month: '2-digit',
-      day: '2-digit',
-    }).slice(0, 10);
+    const matchD = new Date(matchDateInt);
+    const matchDateStr = matchD
+      .toLocaleString('default', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+      })
+      .slice(0, 10);
+
+    let beltHoldingDuration = 0;
+    if (i > 0) {
+      beltHoldingDuration = Math.floor(
+        (matchDateInt - matchDetails[i - 1].matchDate) / (1000 * 60 * 60 * 24)
+      );
+    }
 
     matchDetailsComponents.push(
       <div className="match">
-        <div className="match-title">
-          {matchDateStr}
-        </div>
+        <div className="match-title">{matchDateStr}</div>
         <MatchDetails
-          key={matchDate}
+          key={matchDateInt}
           winnerName={teamIDToData[winnerID].name}
           loserName={teamIDToData[loserID].name}
           winnerNameAbb={teamIDToData[winnerID].abbName}
@@ -70,6 +78,11 @@ export default function App() {
           winnerScore={winnerScore}
           loserScore={loserScore}
         />
+        <div className="match-bottom-text">
+          {`The ${teamIDToData[loserID].name} held the belt for ` +
+            `${beltHoldingDuration} day` +
+            `${beltHoldingDuration > 1 ? 's' : ''}.`}
+        </div>
       </div>
     );
 
@@ -104,9 +117,7 @@ export default function App() {
           <br />
           <br />
           <div className="match-history">
-            <h2 className="match-history-title">
-              Champion Belt History
-            </h2>
+            <h2 className="match-history-title">Champion Belt History</h2>
             <div className="separator" />
             <div className="match-history-list">{matchDetailsComponents}</div>
           </div>
