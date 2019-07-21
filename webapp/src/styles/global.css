@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 html {
-  font: 14px 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #000000;
 }
 
@@ -44,7 +44,6 @@ body {
 .title-text-champion-name {
   display: flex;
   align-items: center;
-
 }
 .title-text-champion-name-main {
   flex-grow: 1;
@@ -64,8 +63,30 @@ body {
 
 .match-history {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  width: 100%;
+}
+
+.match-history-title {
+  text-align: center;
+}
+
+.match-history-list {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.match {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.match-title {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  text-align: center;
 }
 
 .match-details {
@@ -111,6 +132,14 @@ body {
   height: 3rem;
 }
 
+/* ********** Misc. ********** */
+
+.separator {
+  margin: 1rem 0;
+  width: 80%;
+  border-bottom: 1px solid #212121;
+}
+
 /* ********** Spinner ********** */
 
 .spinner {
@@ -141,7 +170,7 @@ body {
 
 @media screen and (min-width: 840px) {
   html {
-    font-size: 16px;
+    font-size: 1.2rem;
   }
 
   .title-text-champion-name-side {

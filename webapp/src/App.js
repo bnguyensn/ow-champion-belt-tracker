@@ -47,20 +47,32 @@ export default function App() {
     const loserID = team1ID === winnerID ? team2ID : team1ID;
     const winnerScore = team1ID === winnerID ? team1Score : team2Score;
     const loserScore = team1ID === winnerID ? team2Score : team1Score;
-    
+
+    const matchDateStr = new Date(matchDate).toLocaleString('default', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+    }).slice(0, 10);
+
     matchDetailsComponents.push(
-      <MatchDetails
-        key={matchDate}
-        winnerName={teamIDToData[winnerID].name}
-        loserName={teamIDToData[loserID].name}
-        winnerNameAbb={teamIDToData[winnerID].abbName}
-        loserNameAbb={teamIDToData[loserID].abbName}
-        winnerLogoURL={teamIDToData[winnerID].svgIcon}
-        loserLogoURL={teamIDToData[loserID].svgIcon}
-        winnerScore={winnerScore}
-        loserScore={loserScore}
-      />
+      <div className="match">
+        <div className="match-title">
+          {matchDateStr}
+        </div>
+        <MatchDetails
+          key={matchDate}
+          winnerName={teamIDToData[winnerID].name}
+          loserName={teamIDToData[loserID].name}
+          winnerNameAbb={teamIDToData[winnerID].abbName}
+          loserNameAbb={teamIDToData[loserID].abbName}
+          winnerLogoURL={teamIDToData[winnerID].svgIcon}
+          loserLogoURL={teamIDToData[loserID].svgIcon}
+          winnerScore={winnerScore}
+          loserScore={loserScore}
+        />
+      </div>
     );
+
     i--;
   }
 
@@ -91,7 +103,13 @@ export default function App() {
           </div>
           <br />
           <br />
-          <div className="match-history">{matchDetailsComponents}</div>
+          <div className="match-history">
+            <h2 className="match-history-title">
+              Champion Belt History
+            </h2>
+            <div className="separator" />
+            <div className="match-history-list">{matchDetailsComponents}</div>
+          </div>
         </>
       )}
     </div>
