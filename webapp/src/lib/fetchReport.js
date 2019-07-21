@@ -1,12 +1,13 @@
-export default function fetchData() {
-  return new Promise((resolve, reject) => {
-    import('../data/report.json').then(
-      ({ default: report }) => {
-        resolve(report);
-      },
-      err => {
-        reject(err);
-      }
-    );
+const url = 'http://localhost:3000/get-champion';
+
+export default function fetchReport() {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      resolve(data);
+    } catch (err) {
+      reject(err);
+    }
   });
 }

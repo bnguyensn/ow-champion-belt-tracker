@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Error from './components/Error';
 import Spinner from './components/Spinner';
-import fetchData from './lib/fetchData';
+import fetchReport from './lib/fetchReport';
 import teamIDToData from './data/teamIDToData.json';
 import MatchDetails from './components/MatchDetails';
-import TeamDisplay from './components/TeamDisplay';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -14,19 +13,19 @@ export default function App() {
   const [errorMsg, setErrorMsg] = useState('');
 
   useEffect(() => {
-    getData();
+    getChampionReport();
   }, []);
 
-  const getData = async () => {
+  const getChampionReport = async () => {
     setIsLoading(true);
     setErrorMsg('');
     try {
-      const res = await fetchData();
+      const report = await fetchReport();
 
-      setChampionName(teamIDToData[res.latestChampionID].name);
-      setChampionLogoURL(teamIDToData[res.latestChampionID].svgIcon);
+      setChampionName(teamIDToData[report.latestChampionID].name);
+      setChampionLogoURL(teamIDToData[report.latestChampionID].svgIcon);
 
-      setMatchDetails(res.championChangingMatchDetails);
+      setMatchDetails(report.championChangingMatchDetails);
     } catch (err) {
       setErrorMsg(err.message);
     }
