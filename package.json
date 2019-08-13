@@ -14,12 +14,10 @@
   "scripts": {
     "test": "npx @bnguyensn/bundler test",
     "dev": "npx @bnguyensn/bundler dev",
-    "prod": "npx @bnguyensn/bundler prod",
-    "server": "node server",
-    "gen-report": "node server/bin/generateReport.js"
+    "prod": "npx @bnguyensn/bundler prod"
   },
   "@bnguyensn/bundler": {
-    "entryPath": "webapp/src/index.js",
-    "htmlWebpackPluginTemplatePath": "webapp/src/assets/html/index.html"
+    "entryPath": "src/index.js",
+    "htmlWebpackPluginTemplatePath": "src/assets/html/index.html"
   }
 }

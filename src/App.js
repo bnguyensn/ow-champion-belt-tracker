@@ -32,10 +32,17 @@ export default function App() {
     setIsLoading(false);
   };
 
+  // ========== Champion-Changing match details ========== //
+
+  // Loop through all champion-changing match details and generate React
+  // components for each one.
+  // Note that we are going through the match details array in reverse order.
+  // This is because we want to display the latest match first.
   const matchDetailsComponents = [];
   let i = matchDetails.length - 1;
   while (i >= 0) {
     const {
+      matchID,
       team1ID,
       team2ID,
       team1Score,
@@ -57,6 +64,7 @@ export default function App() {
       })
       .slice(0, 10);
 
+    // Calculate the number of days the belt was held
     let beltHoldingDuration = 0;
     if (i > 0) {
       beltHoldingDuration = Math.floor(
@@ -65,10 +73,9 @@ export default function App() {
     }
 
     matchDetailsComponents.push(
-      <div className="match">
+      <div key={matchID} className="match">
         <div className="match-title">{matchDateStr}</div>
         <MatchDetails
-          key={matchDateInt}
           winnerName={teamIDToData[winnerID].name}
           loserName={teamIDToData[loserID].name}
           winnerNameAbb={teamIDToData[winnerID].abbName}

@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000/get-champion';
+const url = 'http://localhost:3000/report';
 
 export default function fetchReport() {
   return new Promise(async (resolve, reject) => {
