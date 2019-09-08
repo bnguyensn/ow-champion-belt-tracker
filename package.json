@@ -4,12 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@bnguyensn/bundler": "^2.4.0",
+    "@bnguyensn/bundler": "^2.5.1",
     "prettier": "^1.18.2"
   },
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "scripts": {
     "test": "npx @bnguyensn/bundler test",
