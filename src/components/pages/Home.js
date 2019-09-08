@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './home.css';
 import fetchReport from '../../lib/fetchReport';
 import teamIDToData from '../../data/teamIDToData.json';
+import MatchDetails from '../MatchDetails';
+import Spinner from '../Spinner';
 
 function Title({ championName, championLogoURL }) {
   return (
@@ -111,6 +113,7 @@ export default function Home() {
   const getChampionReport = async () => {
     setIsLoading(true);
     setErrorMsg('');
+
     try {
       const report = await fetchReport();
 
@@ -121,10 +124,13 @@ export default function Home() {
     } catch (err) {
       setErrorMsg(err.message);
     }
+
     setIsLoading(false);
   };
 
-  return (
+  return isLoading ? (
+    <Spinner />
+  ) : (
     <div className="home">
       <Title championName={championName} championLogoURL={championLogoURL} />
       <MatchHistory matchDetails={matchDetails} teamIDToData={teamIDToData} />
