@@ -1,0 +1,116 @@
+/* ********** Main Title ********** */
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.title-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.title-text-champion-name {
+  display: flex;
+  align-items: center;
+}
+.title-text-champion-name-main {
+  flex-grow: 1;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.title-text-champion-name-side {
+  margin: 0 0.5rem;
+}
+
+.title-logo {
+  width: 15rem;
+  height: 15rem;
+}
+
+/* ********** Match History ********** */
+
+.match-history {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.match-history-title {
+  text-align: center;
+}
+
+.match-history-list {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.match {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.match-title {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.match-bottom-text {
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.match-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.match-details-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 20%;
+  margin: 0 0.5rem;
+}
+.match-details-score-winner {
+  font-weight: bold;
+}
+
+.team-display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 40%;
+}
+
+.team-display-name-abb {
+  display: inline-block;
+  text-align: center;
+}
+.team-display-name {
+  display: none;
+  text-align: center;
+}
+.team-display-name-winner {
+  font-weight: bold;
+}
+
+.team-display-logo {
+  margin: 0 0.5rem;
+  width: 3rem;
+  height: 3rem;
+}
