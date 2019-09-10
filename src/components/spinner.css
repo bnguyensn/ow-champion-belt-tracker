@@ -1,0 +1,27 @@
+/* ********** Spinner ********** */
+
+.spinner {
+  margin: 2rem;
+  width: 64px;
+  height: 64px;
+}
+
+.spinner:after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 4px solid;
+  border-color: #ff8900 transparent #ff8900 transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
