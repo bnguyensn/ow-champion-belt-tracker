@@ -46,6 +46,7 @@ admin
 
 # webpack
 stats.json
+webpackRecords.json
 
 # ########## MISC ########## #
 
