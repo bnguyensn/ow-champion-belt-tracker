@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './home.css';
-import fetchReport from '../../lib/fetchReport';
+import { fetchReportLocal as fetchReport } from '../../lib/fetchReport';
 import teamIDToData from '../../data/teamIDToData.json';
 import MatchDetails from '../MatchDetails';
 import Spinner from '../Spinner';
