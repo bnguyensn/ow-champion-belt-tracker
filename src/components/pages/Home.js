@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './home.css';
 import { fetchReportLocal as fetchReport } from '../../lib/fetchReport';
 import teamIDToData from '../../data/teamIDToData.json';
 import MatchDetails from '../MatchDetails';
 import Spinner from '../Spinner';
+import './home.css';
 
 function Title({ championName, championLogoURL }) {
   return (
@@ -92,7 +92,7 @@ function MatchHistory({ matchDetails, teamIDToData }) {
 
   return (
     <div className="match-history">
-      <h2 className="match-history-title">Champion Belt History</h2>
+      <h2 className="match-history-title">CHAMPION BELT HISTORY</h2>
       <div className="separator" />
       <div className="match-history-list">{matchDetailsComponents}</div>
     </div>
@@ -132,8 +132,12 @@ export default function Home() {
     <Spinner />
   ) : (
     <div className="home">
-      <Title championName={championName} championLogoURL={championLogoURL} />
-      <MatchHistory matchDetails={matchDetails} teamIDToData={teamIDToData} />
+      <div className="title-container">
+        <Title championName={championName} championLogoURL={championLogoURL} />
+      </div>
+      <div className="match-history-container">
+        <MatchHistory matchDetails={matchDetails} teamIDToData={teamIDToData} />
+      </div>
     </div>
   );
 }
