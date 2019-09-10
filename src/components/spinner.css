@@ -1,9 +1,13 @@
 /* ********** Spinner ********** */
 
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .spinner {
   margin: 2rem;
-  width: 64px;
-  height: 64px;
 }
 
 .spinner:after {
