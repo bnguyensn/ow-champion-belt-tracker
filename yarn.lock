@@ -760,9 +760,9 @@
     to-fast-properties "^2.0.0"
 
 "@bnguyensn/bundler@^2.5.1":
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/@bnguyensn/bundler/-/bundler-2.5.2.tgz#f6416e03962c9a5303d7677bdc7c65733c79a23d"
-  integrity sha512-F7RfyU8UJmaYhy0OELsu4o9Top45sqyq5nYSuzVRam6RdroqTYOUnXcsLhyjX+WecDaS29bP+Ekqw35d+d2wCQ==
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/@bnguyensn/bundler/-/bundler-2.5.3.tgz#dacab0945a4c8c7265cead4797667f1c31766d9f"
+  integrity sha512-8UKxmsRrCUMJ2tEnf3sLVLxXPpM+yryh7R+Ct/6ESY8FMp79vmBCqyGNMdlYoChivrG+/F4JFrR3Djq8E+S2Pw==
   dependencies:
     "@babel/core" "^7.4.4"
     "@babel/plugin-proposal-class-properties" "^7.4.4"

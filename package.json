@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@bnguyensn/bundler": "^2.5.1",
+    "@bnguyensn/bundler": "^2.5.3",
     "prettier": "^1.18.2"
   },
   "dependencies": {
