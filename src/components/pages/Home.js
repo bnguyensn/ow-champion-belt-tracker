@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchReportLocal as fetchReport } from '../../lib/fetchReport';
+import fetchReport from '../../lib/fetchReport';
 import teamIDToData from '../../data/teamIDToData.json';
 import MatchDetails from '../MatchDetails';
 import Spinner from '../Spinner';
@@ -116,11 +116,13 @@ export default function Home() {
 
     try {
       const report = await fetchReport();
+      const { stageChampionIDs, championChangingMatchDetails } = report;
+      const latestChampionID = stageChampionIDs[stageChampionIDs.length - 1];
 
-      setChampionName(teamIDToData[report.latestChampionID].name);
-      setChampionLogoURL(teamIDToData[report.latestChampionID].svgIcon);
+      setChampionName(teamIDToData[latestChampionID].name);
+      setChampionLogoURL(teamIDToData[latestChampionID].svgIcon);
 
-      setMatchDetails(report.championChangingMatchDetails);
+      setMatchDetails(championChangingMatchDetails);
     } catch (err) {
       setErrorMsg(err.message);
     }
