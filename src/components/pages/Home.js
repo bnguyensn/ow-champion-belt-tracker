@@ -51,7 +51,7 @@ function MatchHistory({ matchDetails, teamIDToData }) {
 
     const matchD = new Date(matchDateInt);
     const matchDateStr = matchD
-      .toLocaleString('default', {
+      .toLocaleString({
         year: 'numeric',
         month: '2-digit',
         day: '2-digit',
