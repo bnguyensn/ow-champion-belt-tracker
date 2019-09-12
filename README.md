@@ -8,7 +8,7 @@ Track which team currently holds the Overwatch League champion belt.
 
 The team that won the first championship is the first champion belt holder (this is London Spitfire).
 
-From then on, every time a champion belt holder is defeated in a championship match, the belt is transferred to the winner.
+From then on, every time a belt holder is defeated in a league match, the belt is transferred to the winner.
 
 This web application shows who is the current champion belt holder, and a history of how the belt moved from team to team.
 
