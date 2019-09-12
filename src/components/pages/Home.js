@@ -99,7 +99,7 @@ function MatchHistory({ matchDetails, teamIDToData }) {
   );
 }
 
-export default function Home() {
+export default function Home({ championReport, setChampionReport }) {
   const [isLoading, setIsLoading] = useState(false);
   const [championName, setChampionName] = useState('');
   const [championLogoURL, setChampionLogoURL] = useState('');
@@ -107,8 +107,12 @@ export default function Home() {
   const [errorMsg, setErrorMsg] = useState('');
 
   useEffect(() => {
-    getChampionReport();
-  }, []);
+    if (!championReport) {
+      getChampionReport();
+    } else {
+      displayChampionReport();
+    }
+  }, [championReport]);
 
   const getChampionReport = async () => {
     setIsLoading(true);
@@ -116,18 +120,23 @@ export default function Home() {
 
     try {
       const report = await fetchReport();
-      const { stageChampionIDs, championChangingMatchDetails } = report;
-      const latestChampionID = stageChampionIDs[stageChampionIDs.length - 1];
 
-      setChampionName(teamIDToData[latestChampionID].name);
-      setChampionLogoURL(teamIDToData[latestChampionID].svgIcon);
-
-      setMatchDetails(championChangingMatchDetails);
+      setChampionReport(report);
     } catch (err) {
       setErrorMsg(err.message);
     }
 
     setIsLoading(false);
+  };
+
+  const displayChampionReport = () => {
+    const { stageChampionIDs, championChangingMatchDetails } = championReport;
+    const latestChampionID = stageChampionIDs[stageChampionIDs.length - 1];
+
+    setChampionName(teamIDToData[latestChampionID].name);
+    setChampionLogoURL(teamIDToData[latestChampionID].svgIcon);
+
+    setMatchDetails(championChangingMatchDetails);
   };
 
   return isLoading ? (
