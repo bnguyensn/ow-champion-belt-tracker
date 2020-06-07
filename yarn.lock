@@ -759,10 +759,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bnguyensn/bundler@^2.5.1":
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/@bnguyensn/bundler/-/bundler-2.5.3.tgz#dacab0945a4c8c7265cead4797667f1c31766d9f"
-  integrity sha512-8UKxmsRrCUMJ2tEnf3sLVLxXPpM+yryh7R+Ct/6ESY8FMp79vmBCqyGNMdlYoChivrG+/F4JFrR3Djq8E+S2Pw==
+"@bnguyensn/bundler@^2.5.3":
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/@bnguyensn/bundler/-/bundler-2.5.5.tgz#be5e009082a39e8f0f97bbc515805f718a1d9255"
+  integrity sha512-T+XYN9OeyqeiAGOoLrp6FafSbK+4RdzGeL0gE1DFGWmc9Ch6kLQ8shTeuMF9ToYQUwL4jXXKWBg/ebs928RICQ==
   dependencies:
     "@babel/core" "^7.4.4"
     "@babel/plugin-proposal-class-properties" "^7.4.4"
@@ -10940,9 +10940,9 @@ websocket-driver@>=0.5.1:
     websocket-extensions ">=0.1.1"
 
 websocket-extensions@>=0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
-  integrity sha512-nqHUnMXmBzT0w570r2JpJxfiSD1IzoI+HGVdd3aZ0yNi3ngvQ4jv1dtHt5VGxfI2yj5yqImPhOK4vmIh2xMbGg==
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
+  integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
 
 whatwg-encoding@^1.0.1, whatwg-encoding@^1.0.3:
   version "1.0.5"
