@@ -759,10 +759,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bnguyensn/bundler@^2.5.1":
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/@bnguyensn/bundler/-/bundler-2.5.3.tgz#dacab0945a4c8c7265cead4797667f1c31766d9f"
-  integrity sha512-8UKxmsRrCUMJ2tEnf3sLVLxXPpM+yryh7R+Ct/6ESY8FMp79vmBCqyGNMdlYoChivrG+/F4JFrR3Djq8E+S2Pw==
+"@bnguyensn/bundler@^2.5.3":
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/@bnguyensn/bundler/-/bundler-2.5.5.tgz#be5e009082a39e8f0f97bbc515805f718a1d9255"
+  integrity sha512-T+XYN9OeyqeiAGOoLrp6FafSbK+4RdzGeL0gE1DFGWmc9Ch6kLQ8shTeuMF9ToYQUwL4jXXKWBg/ebs928RICQ==
   dependencies:
     "@babel/core" "^7.4.4"
     "@babel/plugin-proposal-class-properties" "^7.4.4"
@@ -6747,9 +6747,9 @@ meow@^3.3.0:
     trim-newlines "^1.0.0"
 
 merge-deep@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/merge-deep/-/merge-deep-3.0.2.tgz#f39fa100a4f1bd34ff29f7d2bf4508fbb8d83ad2"
-  integrity sha512-T7qC8kg4Zoti1cFd8Cr0M+qaZfOwjlPDEdZIIPPB2JZctjaPM4fX+i7HOId69tAti2fvO6X5ldfYUONDODsrkA==
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/merge-deep/-/merge-deep-3.0.3.tgz#1a2b2ae926da8b2ae93a0ac15d90cd1922766003"
+  integrity sha512-qtmzAS6t6grwEkNrunqTBdn0qKwFgNWvlxUbAV8es9M7Ot1EbyApytCnvE0jALPa46ZpKDUo527kKiaWplmlFA==
   dependencies:
     arr-union "^3.1.0"
     clone-deep "^0.2.4"
