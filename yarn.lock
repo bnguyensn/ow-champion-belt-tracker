@@ -759,10 +759,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bnguyensn/bundler@^2.5.1":
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/@bnguyensn/bundler/-/bundler-2.5.3.tgz#dacab0945a4c8c7265cead4797667f1c31766d9f"
-  integrity sha512-8UKxmsRrCUMJ2tEnf3sLVLxXPpM+yryh7R+Ct/6ESY8FMp79vmBCqyGNMdlYoChivrG+/F4JFrR3Djq8E+S2Pw==
+"@bnguyensn/bundler@^2.5.3":
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/@bnguyensn/bundler/-/bundler-2.5.5.tgz#be5e009082a39e8f0f97bbc515805f718a1d9255"
+  integrity sha512-T+XYN9OeyqeiAGOoLrp6FafSbK+4RdzGeL0gE1DFGWmc9Ch6kLQ8shTeuMF9ToYQUwL4jXXKWBg/ebs928RICQ==
   dependencies:
     "@babel/core" "^7.4.4"
     "@babel/plugin-proposal-class-properties" "^7.4.4"
@@ -8753,9 +8753,9 @@ qs@6.7.0:
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 query-string@^4.1.0:
   version "4.3.4"
